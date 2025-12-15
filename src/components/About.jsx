@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/AboutSection.css';
-import morfemImage from '../assets/morfem bareng bareng.jpg';
+import morfemImage from '../assets/cikal jeep.JPG';
 
 const AboutSection = () => {
   return (

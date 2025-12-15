@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/HeroSection.css';
-import nagoyaVideo from '../assets/EJAAN.mp4';
+import nagoyaVideo from '../assets/FEED 1 fix.mp4';
 
 const HeroSection = () => {
   return (

@@ -3,7 +3,7 @@ import '../styles/Tour.css';
 import posterTasik from '../assets/Jeep with our DJ sound system will stay parked at @duds.space – keeping the groove alive 🔊☕Samb.jpg';
 import posterJakarta from '../assets/postertour.jpg';
 import posterBali from '../assets/BINGUNG HIDUP.jpg';
-import audioBinar from '../assets/Morfem - Binar Wajah Sebaya.mp3';
+import audioBinar from '../assets/Pumped Up Kicks.mp3';
 import audioRayakan from '../assets/Morfem - Rayakan Pemenang.mp3';
 import audioMegah from '../assets/Morfem - Megah Diterima.mp3';
 
