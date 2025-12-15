@@ -1,4 +1,6 @@
-/* Reset and base styles */
+/* ===================================================
+   RESET & BASE
+=================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,19 +8,22 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Gravity', sans-serif;
   background-color: #142a8f;
-  color: #ffff;
+  color: #ffffff;
 }
 
-/* Header styles */
+/* ===================================================
+   HEADER
+=================================================== */
 .header {
   width: 100%;
   background-color: #142a8f;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 20px;
   text-align: center;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -28,18 +33,22 @@ body {
 }
 
 .header-title {
+  font-family: 'Gravity', sans-serif;
   font-size: 4rem;
   font-weight: 900;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-/* Navigation styles */
+/* ===================================================
+   NAVIGATION
+=================================================== */
 .nav {
   position: relative;
 }
 
-/* Desktop menu */
+/* Desktop Menu */
 .menu {
   display: flex;
   justify-content: center;
@@ -50,37 +59,46 @@ body {
 }
 
 .menu-item {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease;
   position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.menu-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  transition: width 0.3s ease;
 }
 
 .menu-item:hover {
   color: #ff0000;
 }
 
-/* Mobile menu toggle button */
+.menu-item:hover::after {
+  width: 100%;
+}
+
+/* ===================================================
+   MOBILE TOGGLE BUTTON
+=================================================== */
 .menu-toggle {
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30px;
-  height: 25px;
+  height: 22px;
   background: transparent;
   border: none;
   cursor: pointer;
-  margin: 0 auto;
-  padding: 0;
-  transition: all 0.3s ease;
   z-index: 1100;
-}
-
-.menu-toggle:active {
-  /* Remove scale transform to avoid conflict with open state animation */
-  transform: none;
-  transition: none;
 }
 
 .menu-toggle:focus {
@@ -90,13 +108,13 @@ body {
 .menu-toggle .bar {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   transition: all 0.3s ease;
   transform-origin: 1px;
 }
 
-/* Hamburger animation when open */
+/* Hamburger Animation */
 .menu-toggle.open .line1 {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -109,38 +127,33 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile menu dropdown */
+/* ===================================================
+   MOBILE DROPDOWN MENU
+=================================================== */
 .menu-dropdown {
   display: none;
   flex-direction: column;
-  background-color: transparent !important;
-  box-shadow: none !important;
   position: absolute;
+  background-color: rgba(20, 42, 143, 0.96);
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 160px;
   top: 40px;
   right: 0;
-  width: 150px;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
   z-index: 1050;
 }
 
 .menu-dropdown.open {
   display: flex;
-  max-height: 500px; /* enough height to show all items */
+  max-height: 500px;
 }
 
 .menu-dropdown .menu-item {
-  padding: 10px 15px;
-  border-bottom: none;
-  font-size: 1.1rem;
-  text-align: left;
-  cursor: pointer;
-}
-
-.menu-dropdown .menu-item:last-child {
-  border-bottom: none;
+  padding: 12px 18px;
+  font-size: 1.05rem;
 }
 
 .menu-dropdown .menu-item:hover {
@@ -148,25 +161,43 @@ body {
   color: #001f8b;
 }
 
-/* Responsive styles */
+/* ===================================================
+   RESPONSIVE
+=================================================== */
 @media (max-width: 768px) {
   .menu {
     display: none;
   }
+
   .menu-toggle {
     display: flex;
     position: absolute;
     top: -90px;
     right: -2px;
-    margin: 0; /* remove margin auto */
   }
-  .menu-dropdown {
-    top: -60px;
-    right: -95px;
-  }
+
+.menu-dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  padding: 0;
+  width: auto;
+  top: 0px;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 1050;
+}
+
+
   .header {
-    padding: 30px 20px 10px 20px;
+    padding: 30px 20px 10px;
   }
+
   .header-title {
     font-size: 3rem;
   }
@@ -174,6 +205,7 @@ body {
 
 @media (max-width: 480px) {
   .header-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.1em;
   }
 }
