@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../styles/Tour.css';
 import posterTasik from '../assets/Jeep with our DJ sound system will stay parked at @duds.space – keeping the groove alive 🔊☕Samb.jpg';
-import posterJakarta from '../assets/postertour.jpg';
+import posterJakarta from '../assets/EVENT 10 JANUARI.png';
 import posterBali from '../assets/BINGUNG HIDUP.jpg';
 import audioBinar from '../assets/Pumped Up Kicks.mp3';
-import audioRayakan from '../assets/Morfem - Rayakan Pemenang.mp3';
+import audioRayakan from '../assets/Pendarra - Perjalanan Singkat.mp3';
 import audioMegah from '../assets/Morfem - Megah Diterima.mp3';
 
 const tourData = [
-  { date: '2025-12-07', city: 'DUDS.SPACE', venue: 'GAJAHMADA, KOTA SEMARANG', tickets: 'https://tickets.example.com/ny', poster: posterTasik, audio: audioBinar },
-  //{ date: '2024-07-05', city: 'JAKARTA', venue: 'STADION BASEBALL GBK, SENAYAN', tickets: 'https://tickets.example.com/la', poster: posterJakarta, audio: audioRayakan },
+  { date: '2026-10-01', city: 'DUDS.SPACE', venue: 'GAJAHMADA, SEMARANG', tickets: 'https://tickets.example.com/la', poster: posterJakarta, audio: audioRayakan },
+  { date: '2025-12-07', city: 'DUDS.SPACE', venue: 'GAJAHMADA, SEMARANG', tickets: 'https://tickets.example.com/ny', poster: posterTasik, audio: audioBinar },
+  
   //{ date: '2024-07-24', city: 'BALI', venue: 'LAPANGAN NITI MANDALA, DENPASAR', tickets: 'https://tickets.example.com/chicago', poster: posterBali, audio: audioMegah },
   // Tambahkan data tur lainnya sesuai kebutuhan
 ];

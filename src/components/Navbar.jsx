@@ -48,20 +48,18 @@ const Navbar = () => {
               <div className={`menu-dropdown ${menuOpen ? 'open' : ''}`}>
                 <a href="#about" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'about')}>About</a>
                 <a href="#tour" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'tour')}>Tour</a>
-                <a href="#music" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'music')}>Music</a>
-                <a href="#merchandise" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'merchandise')}>Shop</a>
-                <a href="#media-press" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'media-press')}>
-                  Media <br /> &amp; Press
-                </a>
+               
+                
+                
+                 
+              
               </div>
             </>
           ) : (
             <div className="menu">
               <a href="#about" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'about')}>About</a>
               <a href="#tour" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'tour')}>Tour</a>
-              <a href="#music" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'music')}>Music</a>
-              <a href="#merchandise" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'merchandise')}>Shop</a>
-              <a href="#media-press" className="menu-item" onClick={(e) => handleMenuItemClick(e, 'media-press')}>Media &amp; Press</a>
+              
             </div>
           )}
         </nav>

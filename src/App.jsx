@@ -2,10 +2,10 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import TourSection from './components/Tour';
-import MusicSection from './components/Music';
+//import MusicSection from './components/Music';
 import AboutSection from './components/About';
-import MerchandiseSection from './components/MerchandiseSection';
-import MediaPressSection from './components/MediaPress';
+//import MerchandiseSection from './components/MerchandiseSection';
+//import MediaPressSection from './components/MediaPress';
 import NewsletterSignup from './components/NewsletterSignup';
 import SocialMediaFeeds from './components/SocialMediaFeeds';
 import Content from './components/Content';
@@ -19,10 +19,10 @@ const App = () => {
       <HeroSection />
       <AboutSection />
       <TourSection />
-      <MusicSection />
+      
       <Content />
-      <MerchandiseSection />
-      <MediaPressSection />
+      
+      
       <NewsletterSignup />
       <SocialMediaFeeds />
       <Footer />

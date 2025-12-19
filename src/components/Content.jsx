@@ -1,17 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/Content.css';
-import cover1 from '../assets/Jeep with our DJ sound system will stay parked at @duds.space – keeping the groove alive 🔊☕Samb.jpg';
-import cover2 from '../assets/FEEDS5-1.png';
-import cover3 from '../assets/JANUARI.jpg';
-import cover4 from '../assets/Jumpa di.jpg';
+import cover1 from '../assets/EVENT 10 JANUARI.png';
+import cover2 from '../assets/Jeep with our DJ sound system will stay parked at @duds.space – keeping the groove alive 🔊☕Samb.jpg';
+import cover3 from '../assets/FEEDS5-1.png';
+import cover4 from '../assets/JANUARI.jpg';
+import cover5 from '../assets/Jumpa di.jpg';
 
 const Content = () => {
   const sectionRef = useRef(null);
 
   const albums = [
-    { title: '', artist: '', cover: cover1, link: 'https://www.instagram.com/p/DR1ycfeD7zT/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==' },
-    { title: '', artist: '', cover: cover2, link: 'https://www.instagram.com/p/DRowGVFjzg3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
-    { title: '', artist: '', cover: cover3, link: 'https://www.instagram.com/p/DQ9TufWj3uP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
+    { title: '', artist: '', cover: cover1, link: 'https://www.instagram.com/p/DSb1m5Ejz8V/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==' },
+    { title: '', artist: '', cover: cover2, link: 'https://www.instagram.com/p/DR1ycfeD7zT/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==' },
+    { title: '', artist: '', cover: cover3, link: 'https://www.instagram.com/p/DRowGVFjzg3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
+    { title: '', artist: '', cover: cover4, link: 'https://www.instagram.com/p/DQ9TufWj3uP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
     //{ title: '', artist: '', cover: cover4, link: 'https://www.instagram.com/p/DFfspd4yAiM/?utm_source=ig_web_copy_link&igsh=dG4xZWtuYzRlYngx' },
   ];
 
